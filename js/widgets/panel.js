@@ -107,7 +107,7 @@ $.widget( "mobile.panel", {
 	_getWrapper: function() {
 		var wrapper = this._page().find( "." + this.options.classes.pageWrapper );
 		if ( wrapper.length === 0 ) {
-			wrapper = this._page().children( ".ui-header:not(.ui-header-fixed), .ui-content:not(.ui-popup), .ui-footer:not(.ui-footer-fixed)" )
+			wrapper = this._page().children( ".ui-header:not(.ui-header-fixed), .ui-content:not(.ui-popup), .ui-footer:not(.ui-footer-fixed), .region_navigation" )
 				.wrapAll( "<div class='" + this.options.classes.pageWrapper + "'></div>" )
 				.parent();
 		}
